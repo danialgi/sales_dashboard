@@ -25,6 +25,7 @@ data_file3 = 'March_Sales_Dashboard.xlsx'
 
 st.header(f":bar_chart: Dashboard")
 
+@st.cache_data
 def process_data_sheets(data_file):
     # Helper function to process individual sheets
     def process_sheet(df):
