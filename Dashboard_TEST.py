@@ -18,10 +18,10 @@ today_date = datetime.now().strftime('%Y-%m-%d')
 st.set_page_config(page_title="Dashboard", page_icon=":bar_chart:", layout="wide")
 
 #st.header("File Upload")
-data_file1 = st.file_uploader(".xlsx file1",type=['xlsx'])
-data_file2 = st.file_uploader(".xlsx file2",type=['xlsx'])
-data_file3 = st.file_uploader(".xlsx file3",type=['xlsx'])
-st.markdown("#")
+data_file1 = 'January_Sales_Dashboard.xlsx'
+data_file2 = 'February_Sales_Dashboard.xlsx'
+data_file3 = 'March_Sales_Dashboard.xlsx'
+#st.markdown("#")
 
 st.header(f":bar_chart: Dashboard")
 
