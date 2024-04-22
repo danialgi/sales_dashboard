@@ -18,9 +18,9 @@ today_date = datetime.now().strftime('%Y-%m-%d')
 st.set_page_config(page_title="Dashboard", page_icon=":bar_chart:", layout="wide")
 
 #st.header("File Upload")
-data_file1 = 'January_Sales_Dashboard.xlsx'
-data_file2 = 'February_Sales_Dashboard.xlsx'
-data_file3 = 'March_Sales_Dashboard.xlsx'
+data_file1 = st.file_uploader(".xlsx file1",type=['xlsx'])
+data_file2 = st.file_uploader(".xlsx file2",type=['xlsx'])
+data_file3 = st.file_uploader(".xlsx file3",type=['xlsx'])
 #st.markdown("#")
 
 st.header(f":bar_chart: Dashboard")
@@ -255,8 +255,8 @@ with colB1:
             projection_scale=6,
             showland=True,  # Ensure the land is shown
             landcolor='rgb(217, 217, 217)',
-            showocean=True,  # Set the land color
-            oceancolor='rgb(0, 0, 0)',
+            #showocean=True,  # Set the land color
+            #oceancolor='rgb(0, 0, 0)',
             countrywidth=0.1  # Set the country border width
         )
     )
